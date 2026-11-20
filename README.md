@@ -57,9 +57,9 @@ Brim is free, so it isn't notarized by Apple (that needs a paid developer accoun
 Each release lists the SHA-256 of its files. The current values are also in https://brim-ehw.pages.dev/latest.json.
 
 ```sh
-shasum -a 256 Brim-1.0.8.zip
+shasum -a 256 Brim-1.0.9.zip
 curl -fsSL https://brim-ehw.pages.dev/latest.json     # compare with "zip" → "sha256"
-ditto -x -k Brim-1.0.8.zip out && codesign --verify --deep --strict --verbose=2 out/Brim.app
+ditto -x -k Brim-1.0.9.zip out && codesign --verify --deep --strict --verbose=2 out/Brim.app
 ```
 
 ## What Brim changes on your Mac
@@ -77,7 +77,7 @@ Brim asks for macOS permissions (Calendars, Camera, Microphone, Screen Recording
 - No account, no sign-in, no ads.
 - Calendar events, files, recordings and settings stay on your Mac.
 - **Claude usage comes only from Claude Code's status line.** Brim never reads the Keychain or your Claude login and makes no requests to Anthropic.
-- **One anonymous ping a day:** a random install id made on your Mac, the Brim version and the macOS version. Nothing else. It is always on, and the same request checks for updates. IP addresses are not stored; pings are deleted after 90 days. Public totals: https://brim-ehw.pages.dev/stats.html
+- **One anonymous ping a day:** a random install id made on your Mac, the Brim and macOS versions, which Brim modules are switched on, and the channel you installed from if your install link named one (e.g. `reddit`). Nothing else. It is always on, and the same request checks for updates. IP addresses are not stored; pings are deleted after 90 days. Public totals: https://brim-ehw.pages.dev/stats.html
 - Feedback is sent only if you write it and press Send.
 
 ## Uninstall
