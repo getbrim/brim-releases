@@ -32,7 +32,13 @@ One command (recommended):
 curl -fsSL https://brim-ehw.pages.dev/install.sh | BRIM_REF=github sh
 ```
 
-Read it first if you like: https://brim-ehw.pages.dev/install.sh. It downloads the zip, checks its SHA-256 against `latest.json`, verifies the code signature, copies Brim to /Applications and optionally links `brim` into `~/.local/bin`. It doesn't use sudo unless /Applications isn't writable, and then it asks.
+Or with Homebrew:
+
+```sh
+brew install --cask getbrim/tap/brim
+```
+
+Read the install script first if you like: https://brim-ehw.pages.dev/install.sh. It downloads the zip, checks its SHA-256 against `latest.json`, verifies the code signature, copies Brim to /Applications and optionally links `brim` into `~/.local/bin`. It doesn't use sudo unless /Applications isn't writable, and then it asks.
 
 Or download the DMG or zip from the [Releases](../../releases) page.
 
