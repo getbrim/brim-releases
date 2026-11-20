@@ -51,9 +51,9 @@ Brim is free, so it isn't notarized by Apple (that needs a paid developer accoun
 Each release lists the SHA-256 of its files. The current values are also in https://brim-ehw.pages.dev/latest.json.
 
 ```sh
-shasum -a 256 Brim-1.0.7.zip
+shasum -a 256 Brim-1.0.8.zip
 curl -fsSL https://brim-ehw.pages.dev/latest.json     # compare with "zip" → "sha256"
-ditto -x -k Brim-1.0.7.zip out && codesign --verify --deep --strict --verbose=2 out/Brim.app
+ditto -x -k Brim-1.0.8.zip out && codesign --verify --deep --strict --verbose=2 out/Brim.app
 ```
 
 ## What Brim changes on your Mac
